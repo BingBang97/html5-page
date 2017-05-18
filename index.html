@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+
+<head>
+	<meta charset="utf-8"/>
+	<title>cena-auta</title>
+	<meta name="description" content="Największa niezależna baza z cenami aut używanych z ubiegłych lat w Polsce!" />
+	<meta name= "keywords" content="auto handel, komis, skup aut, sprzedaż aut, ceny aut używanych, baza cen aut używanych, ceny aut używanych, autogiełda, ceny aut wykresy, jak zmienia się wartość auta, jak zmienia się wartość pojazdu, cena auta, cena-auta.pl,ceny samochodów" />
+	<link rel="stylesheet" href="style.css" type="text/css"/>
+</head>
+
+<body>
+
+
+<div id="container">
+
+	<div id="logo">
+		
+		<center><img src="https://zapodaj.net/images/6e08390c50912.jpg"/></center>
+	
+	</div>
+
+		<center>
+			<p>
+				<ul id="ulMenuBar">
+					<li id="liMenuBar"><a id="aMenuBar" href="2016.html"><b>2016</b></a></li>
+					<li id="liMenuBar"><a id="aMenuBar" href="2017.html"><b>2017</b></a></li>
+					<li id="liMenuBar"><a id="aMenuBar" href="onas.html"><b>O NAS</b></a></li>
+				</ul>
+			</p>
+		</center>
+	
+	<div id="opis">
+	<center>
+	Komis czynny 7 dni w tygodniu od 10 do 17.<br/> 
+	Bardzo atrakcyjne ceny! <br/>
+	Można nas znaleźć na ul. Wernera 10 ( róg Szarych Szeregów). Radom.<br/>
+	Jak dojechać: 
+	
+
+	
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Strict//EN'
+ 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd'>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Google Maps JavaScript API v3 - Twoja pierwsza mapa</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript">
+
+	var markers =	[
+			 [0, 51.4085028, 21.146627299999977, 'Stanisława Wernera 10', '', '', '', '', '', ''],
+			]
+	var markerMemo = null;
+	var infowindow = null;
+	var info = new google.maps.InfoWindow({
+	maxWidth: 100
+	});
+	var map;
+	
+	function initialize() {
+		var myOptions = {
+			zoom: 18,
+			center: new google.maps.LatLng(51.40844591577708,21.146758728241718),
+			navigationControl: true,
+			panControl: true,
+			zoomControl: true,
+			rotateControl: true,
+			overviewMapControl: true,
+			navigationControlOptions: {
+				style: google.maps.NavigationControlStyle.DEFAULT
+			},
+			mapTypeControl: true,
+			mapTypeControlOptions: {
+				style: google.maps.MapTypeControlStyle.DEFAULT
+			},
+			mapTypeId: google.maps.MapTypeId.TERRAIN
+		}
+		var map = new google.maps.Map(document.getElementById("moja-mapa"), myOptions);
+			for(var i in markers) {
+			infowindow = '<div class="widows-map"><strong>' + markers[i][3] + '</strong><p>';
+						if (markers[i][6] && !markers[i][7]) {
+							infowindow += markers[i][6] + '</p>';
+						}
+						if (markers[i][6] && markers[i][7]) {
+							infowindow += '<a href="' + markers[i][7] + '">' + markers[i][6] + '</a></p>';
+						}
+						if (markers[i][8]) {
+							infowindow += markers[i][8] + '<br />';
+						}	
+						if (markers[i][9]) {
+							infowindow += '<a href="http://maps.google.pl/maps?daddr=' + markers[i][1] + ', ' + markers[i][2] + '&hl=pl&ie=UTF8&z=' + map.getZoom() + '">wskazówki dojazdu</a>';
+						}
+						'</div>'
+				if (markers[i][4]) {
+					var markerOption =
+					{
+						map: map,
+						position: new google.maps.LatLng(markers[i][1], markers[i][2]),
+						title: markers[i][3],
+						html: infowindow,
+						icon: document.getElementById('link').href + markers[i][4],
+						shadow: markers[i][5]
+					}
+				} else {
+					var markerOption =
+					{
+						map: map,
+						position: new google.maps.LatLng(markers[i][1], markers[i][2]),
+						title: markers[i][3],
+						html: infowindow
+					}
+				}
+			var marker = new google.maps.Marker(markerOption);
+			if (infowindow) {
+				google.maps.event.addListener(marker, "click", function ()
+			{
+				info.setContent(this.html);
+				info.open(map, this);
+			});
+			}	else {
+				infowindow = '';
+			}
+			if (i==0 && infowindow) {markerMemo = marker;}
+		}
+		if (markerMemo) google.maps.event.trigger(markerMemo, "click");
+	}
+</script>
+</head>
+<body onLoad="initialize()">
+	<div id="moja-mapa" style="width: 380px; height: 200px;">
+		<!-- Miejsce wyświetlenia mapy -->
+	</div>
+	<div style="padding-top:10px; text-align: right; width: 380px;"><a href="http://www.web4you.com.pl" id="link"><img src="http://www.web4you.com.pl/geofinder.gif" alt="Pozycjonowanie, Google Maps API" border="0" width="80" height="15"></a></div>
+</body>
+</html>
+
+
+	
+	</center>
+	<br/>
+	
+	</div>
+	
+			<div id="footer">
+			cena-auta.pl 2016
+			</div>
+			
+	
+</div>	
+
+
+
+
+
+
+</body>
+
+</html>

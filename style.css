@@ -1,0 +1,115 @@
+h2
+{
+	color: black;
+	font-size: 38px;
+	font-weight: bold;
+}
+
+body
+{
+	/* background-color: #E4DCDC; */
+	background-image: url("https://zapodaj.net/images/c7bbb70b46181.jpg");
+	font-family: Forefront;
+}
+/* nieodwiedzony link */
+a:link
+{
+	 color: #FAFCFC;
+	 text-decoration: none;
+}
+
+#footer
+{
+	position: absolute;
+	bottom: 0;
+	float: right;
+	font-size: 10px; 
+}
+#container
+{
+	width: 1600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#logo
+{
+	margin-top: 10px;
+	
+}
+#menu
+{
+	color: #FAFCFC;
+	background-color: #3F4345;
+	padding: 7px;
+	margin-center: auto;
+}
+#opis
+{
+	font-size: 17px;
+	padding: 20px;
+	background-color: #F2F3F7;
+	margin-top: 8px;
+	height: 280px;
+}
+.option
+{
+	float: center;
+	min-width: 50px;
+	heigh: 25px;
+	padding: 10px;
+	border-right: 2px dotted #ffffff;
+}
+.option:hover
+{
+	background-color: #FF7A05;
+	cursor: pointer;
+}
+
+#ulMenuBar {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+#aMenuBar {
+    width: 8em;
+    text-decoration: none;
+    color: #white;
+    background-color: #000000;
+    padding: 0.2em 0.6em;
+    border-right: 1px solid #000;
+    border-radius: 40px;
+}
+
+#aMenuBar:hover {
+    background-color: #FFFFFF;
+}
+
+#liMenuBar {
+    display: inline;
+}
+#oskup
+{
+	font-size: 17px;
+	padding: 20px;
+	background-color: #F2F3F7;
+	margin-top: 8px;
+	height: 80px;
+}
+#osprzedaz
+{
+	font-size: 17px;
+	padding: 20px;
+	background-color: #F2F3F7;
+	margin-top: 8px;
+	height: 80px;
+}
+#okredyt
+{
+	font-size: 17px;
+	padding: 20px;
+	background-color: #F2F3F7;
+	margin-top: 8px;
+	height: 80px;
+}
